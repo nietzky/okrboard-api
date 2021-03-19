@@ -1,0 +1,46 @@
+/*Create objective*/
+POST http://localhost:8080/users/1/objectives
+Body:
+{
+ "title": "Objective testing 18",
+ "created_on": "2020-01-24",
+ "created_by": "u002284",
+ "owner": "U007284"
+
+
+}
+----------
+/* Delete Objective*/
+DELETE http://localhost:8080/users/1/objectives/13
+----------
+
+/* Update Objective*/
+Body:
+{
+ "title": "test objectiveeeeee"
+
+}
+
+--------------
+/* Update KeyResult*/
+PUT http://localhost:8080/users/1/objectives/1/keyresults/1009
+
+{
+    "title": "Some KR5",
+    "owner": "u007284",
+    "description": "blah222",
+    "whyItMatters": "blah blah blah"
+}
+------------------
+PUT http://localhost:8080/users/1/objectives/5
+{
+ "title": "Objective testing",
+ "start_date": "2020-01-01",
+ "due_date": "2020-03-31",
+ "created_on": "2020-01-24",
+ "created_by": "u002284",
+ "owner": "U007284",
+ "updated_by": "u000084",
+ "updated_on": "2020-01-24"
+
+}
